@@ -27,6 +27,9 @@ with final.pkgs.stdenv; let
     postInstall = ''
       mkdir -p $out/share/dbus-1/system.d
       cp ${self}/tailord/com.tux.Tailor.conf $out/share/dbus-1/system.d
+      mkdir -p $out/share/dbus-1/system-services
+      cp ${self}/tailord/tailord.service.in $out/share/dbus-1/system-services/tailord.service
+      sed -i "s|@BIN@|$out/bin/tailord|g" $out/share/dbus-1/system-services/tailord.service
     '';
 
     meta = with final.lib; {
