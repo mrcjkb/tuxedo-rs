@@ -12,7 +12,7 @@
 
   tuxedo-rs = pkgs.tuxedo-rs.overrideAttrs (oa: {
     src = self;
-    version = ((lib.importTOML "${self}/tailord/Cargo.toml").package).version;
+    version = ((lib.importTOML "${self}/Cargo.toml").workspace.package).version;
     cargoDeps = pkgs.rustPlatform.importCargoLock {
       lockFile = self + "/Cargo.lock";
     };
