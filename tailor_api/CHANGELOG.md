@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.2.6](https://github.com/mrcjkb/tuxedo-rs/compare/tailor_api-v0.2.5...tailor_api-v0.2.6) (2024-09-27)
+
+
+### Bug Fixes
+
+* initialise default configs as needed on startup ([0d708ad](https://github.com/mrcjkb/tuxedo-rs/commit/0d708adab1275e07868a3821fe4e27c84bf65ae5))
+* Parse profiles without LedMode without failing ([d2e938e](https://github.com/mrcjkb/tuxedo-rs/commit/d2e938efd2e9e877e7eef9208cdc581b0e89e708))
+* properly handle monochrome devices ([e75964c](https://github.com/mrcjkb/tuxedo-rs/commit/e75964c39daa3497fb0fac8ea1adc42f67a5fb6c))
+
 ## [0.2.5](https://github.com/AaronErhardt/tuxedo-rs/compare/tailor_api-v0.2.4...tailor_api-v0.2.5) (2024-04-01)
 
 
